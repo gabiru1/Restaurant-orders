@@ -78,7 +78,9 @@ def analyze_log(path_to_file):
             f.write(("\n" + str(days_not_attended)))
 
     except FileNotFoundError:
-        raise FileNotFoundError("Arquivo inexistente: '{}'".format(path_to_file))
+        raise FileNotFoundError(
+            "Arquivo inexistente: '{}'".format(path_to_file)
+        )
 
 
 print(analyze_log("data/orders_1.csv"))
