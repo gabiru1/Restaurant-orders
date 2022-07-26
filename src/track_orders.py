@@ -1,7 +1,7 @@
 class TrackOrders:
     # aqui deve expor a quantidade de estoque
     def __init__(self):
-            self.data = []
+        self.data = []
 
     def __len__(self):
         return len(self.data)
@@ -26,7 +26,6 @@ class TrackOrders:
                 foods[info['pedido']] += 1
 
         return max(foods, key=foods.get)
-
 
     def get_never_ordered_per_customer(self, customer):
         menus = set()
